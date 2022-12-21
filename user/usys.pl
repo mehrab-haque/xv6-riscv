@@ -22,6 +22,7 @@ entry("pipe");
 entry("read");
 entry("write");
 entry("close");
+entry("trace");
 entry("kill");
 entry("exec");
 entry("open");

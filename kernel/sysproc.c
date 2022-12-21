@@ -77,13 +77,20 @@ sys_kill(void)
   return kill(pid);
 }
 
+uint64
+sys_trace(void)
+{
+  //printf("fuckin hell\n");
+  return 2;
+}
+
 // return how many clock tick interrupts have occurred
 // since start.
 uint64
 sys_uptime(void)
 {
   uint xticks;
-
+  printf("hi");
   acquire(&tickslock);
   xticks = ticks;
   release(&tickslock);
